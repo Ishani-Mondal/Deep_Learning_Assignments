@@ -1,0 +1,39 @@
+import numpy as np
+from data_loader import DataLoader
+
+class NN(object):
+    def __init__(self):
+        self.W1 = np.random.uniform(0,1,size=(784,500))
+        W2 = np.random.uniform(0,1,size=(500,10))
+        b1 = np.random.uniform(0,1,size=(1,500))
+        b2 = np.random.uniform(0,1,size=(1,10))
+
+    def relu(z):
+    	return np.maximum(z, 0)
+	
+    def softmax(z):
+    	return np.exp(z) / np.sum(np.exp(z))
+
+    def softmax_derivative(z):
+    	return z(1-z)
+   
+    def relu_derivative(z):
+        if z>0:
+            return 1
+        else:
+            return 0    
+
+
+    def forward(self,X):
+        Z1 = np.multiply(self.W1.T,X) + b1
+        print(Z1.shape)
+
+    def backward(self):
+        pass
+
+dl = DataLoader()
+images, labels = dl.load_data('train')
+X = images
+
+nn = NN()
+nn.forward(X)

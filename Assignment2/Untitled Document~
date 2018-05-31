@@ -1,0 +1,5 @@
+Interesting Observations:
+ 1. The hyperparameters play a major role in determining the accuracy of the system. The following have been tested:
+	a. If the learning rate is too high, the accuracy falls down and training time is faster. But if it is kept low, the convergence is 		slower. 
+	b. The loss per epoch initially reduces then after some epochs it will again start increasing. So the number of epochs have been kept 		in an optimal range.
+ 2. The training and test accuracy are not much different. 

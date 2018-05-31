@@ -1,0 +1,2 @@
+Accuracy: 0.98 for train 
+Accuracy: 0.89 for test 

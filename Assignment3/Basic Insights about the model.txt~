@@ -1,0 +1,8 @@
+Basic Insights about the model:
+	1. When the entire network with 3 hidden layers is being trained, the training accuracy turns out to be 58% and the test accuracy is 		56%.
+	2. The training accuracy of layer1 is 56% , layer 2 is 63% and layer 3 is 69%. This implies that as we increase the number of hidden 		layers, the network overfits the data.
+	3. The test accuracy on layer 1 is 30%, layer 2 is 40% and layer 3 is 10%
+	, suggesting that layer 1 underfits the data, layer 3 overfits too much
+	and hence reports the least accuarcy. Layer 2 is the best fit to the
+	data.
+
